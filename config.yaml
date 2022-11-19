@@ -1,0 +1,98 @@
+---
+baseurl: "https://wlsn.sh"
+languageCode: "en-gb"
+title: "WLSN"
+theme:
+  - "hugo-tania"
+  - "plausible-hugo"
+paginate: 6
+enableEmoji: true
+relativeURLs: true
+# uglyurls: true
+
+params:
+  # Logo will show before the blog title on site navbar.
+  # titleLogo: favicon.svg
+
+  # Enable float footnotes.
+  # Default to true
+  enableFootnotes: false
+
+  siteName: "WLSN"
+  siteDesc: "A tech blog, with a focus on cloud technologies, infrastructure and selfhosting."
+  author: "Bertie"
+
+  colorScheme:
+    toggle: true
+    default: auto
+
+  # Limit how many categories filter show above search input.
+  # Default to 5
+  maxCategoryToShow: 10
+
+  # Show your social information with icon on index bio with `_index.md` content.
+  socialOptions:
+    dev-to:
+    email:
+    facebook:
+    # github: https://github.com/bertiewils
+    instagram:
+    linkedin:
+    medium:
+    stack-overflow:
+    steam:
+    telegram:
+    twitter:
+    twitch:
+    whatsapp:
+
+  # Comments settings
+  comments:
+    enabled: true
+    provider: giscus
+
+    giscus:
+      repo: bertiewils/wlsn.sh
+      id: R_kgDOIA6z_w
+      mapping: pathname
+      category:
+        name: Blog Posts
+        id: DIC_kwDOIA6z_84CRnZU
+
+
+  plausible:
+    enable: true  # Whether to enable plausible tracking
+    domain: "wlsn.sh"  # Plausible "domain" name/id in your dashboard
+    selfhosted_domain: "stats.wilsn.uk"
+
+
+menu:
+  header:
+    - name: Articles
+      url: "/articles/"
+    - name: Tags
+      url: "/tags/"
+  footer:
+    - name: Articles
+      url: "/articles/"
+    - name: GitHub
+      url: "https://github.com/bertiewils"
+    - name: RSS
+      url: "/index.xml"
+
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true
+  goldmark:
+    renderer:
+      unsafe: true
+
+
+permalinks:
+  posts: :title
+
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
