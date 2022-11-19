@@ -1,1 +1,0 @@
-Content-Security-Policy: {{ partial "plausible_csp.html" . }}
