@@ -1,1 +1,8 @@
-{{ partial "plausible_head.html" . }}
+{{ if and .Site.Params.umami.enabled (not .Site.IsServer) }}
+<script
+  async
+  defer
+  data-website-id="{{ .Site.Params.umami.websiteId }}"
+  src="{{ .Site.Params.umami.jsLocation }}"
+></script>
+{{ end }}

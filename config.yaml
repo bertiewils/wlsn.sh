@@ -60,10 +60,10 @@ params:
         id: DIC_kwDOIA6z_84CRnZU
 
 
-  plausible:
-    enable: true  # Whether to enable plausible tracking
-    domain: "wlsn.sh"  # Plausible "domain" name/id in your dashboard
-    selfhosted_domain: "stats.wilsn.uk"
+  umami:
+    enabled: true
+    websiteId: "c3cb7bde-4be9-459e-8d40-cd7e95fa1377"
+    jsLocation: "https://analytics.umami.is/script.js"
 
 
 menu:
