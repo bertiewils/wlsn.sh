@@ -4,7 +4,6 @@ languageCode: "en-gb"
 title: "WLSN"
 theme:
   - "hugo-tania"
-  - "plausible-hugo"
 paginate: 6
 enableEmoji: true
 relativeURLs: true
